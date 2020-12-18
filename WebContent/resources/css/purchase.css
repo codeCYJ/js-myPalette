@@ -1,0 +1,407 @@
+@import 'AppleNav.css';
+@import 'footer.css';
+
+:root {
+  /*fontsize*/
+  --font-large: 24px;
+  --font-medium: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', 'Noto Sans KR',sans-serif;
+  word-break: keep-all;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+body{
+  height: 100%;
+}
+.grid {
+  display: flex;
+  margin: 12px;
+  max-width: 1000px;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.grid .grid-img{
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+.grid .grid-img .img-main{
+  width: 100%;
+  height: 70%;
+  cursor: pointer;
+}
+.grid .grid-img .img-sub{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.grid .grid-img .img-sub1,
+.grid .grid-img .img-sub2,
+.grid .grid-img .img-sub3,
+.grid .grid-img .img-sub4{
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+}
+.grid .grid-content{
+  width: 50%;
+  padding-left: 20px;
+}
+.grid .grid-content .content-title{
+  font-size: 40px;
+  font-weight: 900;
+}
+.grid .grid-content .content-price{
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 30px 10px 20px 10px;
+}
+
+.grid .grid-content .content-madein,
+.grid .grid-content .content-delivery{
+  font-size: var(--font-medium);
+  font-weight: 600;
+  border-top: 1px solid #888;
+  padding: 13px;
+  margin: 15px 0 15px 0;
+}
+.grid .grid-content .content-counter{
+  background-color: #eee;
+  border-bottom: 1px solid #888;
+}
+.grid .grid-content .content-counter .counter-title{
+  border-bottom: 1px solid #888;
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-medium);
+  padding-left: 10px;
+}
+.grid .grid-content .content-counter .counter-counts{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-medium);
+  font-weight: bolder;
+}
+.grid .grid-content .content-counter .counter-counts .counts-price, .qty{
+  display: flex;
+}
+.grid .grid-content .content-counter .counter-counts span:first-child{
+  padding-left: 10px;
+}
+.grid .grid-content .content-counter .counter-counts span:last-child{
+  padding-right: 10px;
+}
+.grid .grid-content .content-priceall{
+  font-size: var(--font-large);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 600;
+  margin: 30px 0 30px 10px;
+}
+.grid .grid-content .content-priceall span:first-child{
+  font-weight: normal;
+  font-size: var(--font-medium);
+  padding-right: 40px;
+}
+.grid .grid-content .content-btn{
+  display: flex;
+  justify-content: space-around;
+} 
+.grid .grid-content .content-btn .btn-bag{
+  border: 1px solid black;
+  padding: 15px 15%;
+  font-weight: 900;
+  font-size: 20px;
+}
+.grid .grid-content .content-btn a:last-child{
+  background-color: #ca3038;
+  padding: 15px 15%;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+}
+.gridlast{
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+.gridlast .last-title{
+  width: 100%;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+.gridlast .last-img{
+  display: flex;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.gridlast .img-1, .gridlast .img-2, .gridlast .img-3, 
+.gridlast .img-4, .gridlast .img-5, .gridlast .img-6{
+  height: 500px;
+  width: 166px;
+  overflow: hidden;
+  transition: width 0.5s ease-in;
+}
+.gridlast .img-1:hover,.gridlast .img-2:hover,.gridlast .img-3:hover,.gridlast .img-4:hover,.gridlast .img-5:hover,.gridlast .img-6:hover{
+  width: 90%;
+  max-height: 500px;
+  overflow: visible; 
+  position: absolute;
+} 
+.counter-counts .qty{
+  display: flex;
+  align-items: center;
+  border: 1px solid #888;
+  height: 35px;
+}
+#ct_qty{
+  outline: none;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  border-left: 1px solid #bbbbbb;
+  border-right: 1px solid #bbbbbb;
+  background-color: #eee;
+  font-size: 18px;
+}
+.qty .minus a,
+.qty .plus a{
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: black;
+  padding: 0px 5px 0px 5px;
+  width: 20px;
+}
+.qty .plus a{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* 반응형 */
+@media screen and (max-width : 1045px){
+  .grid {
+    max-width: 747px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .grid .grid-img{
+    flex-direction: column;
+    width: 50%;
+    height: 95%;
+  }
+  .grid .grid-content .content-title{
+    font-size: 35px;
+  }
+  .grid .grid-content .content-price{
+    font-size: 25px;
+  }
+  .grid .grid-content .content-madein,
+  .grid .grid-content .content-delivery{
+    font-size: 16px;
+  }
+  .grid .grid-content .content-counter .counter-title,
+  .grid .grid-content .content-counter .counter-counts{
+    font-size: 16px;
+  }
+  .grid .grid-content .content-priceall{
+    font-size: 25px;
+  }
+  .grid .grid-content .content-priceall span:first-child{
+    font-size: 16px;
+  }
+  .grid .grid-content .content-btn a:first-child,
+  .grid .grid-content .content-btn a:last-child{
+    padding: 15px 14%;
+    font-size: 18px;
+  }
+  .gridlast{
+    max-width: 710px;
+    max-height: 400px;
+  }
+.gridlast .last-title{
+  font-size: 35px;
+}
+}  
+@media screen and (max-width : 710px){
+  body{
+    overflow-x: hidden;
+  }
+  .grid {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .grid .grid-img{
+    width: 100%;
+    height: 100%;
+  }
+  .grid .grid-img .img-main{
+    width: 100%;
+    height: 400px;
+  }
+  .grid .grid-content{
+    width: 100%;
+    padding: 0;
+  }
+  .grid .grid-content .content-title{
+    border-top: 1px solid #888;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 35px;
+  }
+  .grid .grid-content .content-counter .counter-counts,
+  .grid .grid-content .content-counter .counter-title{
+    font-size: 17px;
+  }
+  .grid .grid-content .content-priceall span:first-child{
+    font-size: 17px;
+  }
+  .grid .grid-content .content-btn{
+    margin-top: 60px;
+    text-align: center;
+  }
+  .grid .grid-content .content-btn a:first-child,
+  .grid .grid-content .content-btn a:last-child{
+    padding: 15px 60px;
+    font-size: 26px;
+  }
+  .gridlast{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 500px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    margin-top: 80px;
+  }
+.gridlast .last-title{
+  width: 100%;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+.gridlast .last-img{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.gridlast .img-1, .gridlast .img-2, .gridlast .img-3, 
+.gridlast .img-4, .gridlast .img-5, .gridlast .img-6{
+  height: 500px;
+  width: 90%;
+  overflow: hidden;
+  transition: width 0.5s ease-in;
+}
+.gridlast .img-2, .gridlast .img-6{
+  margin-left: 3%;
+}
+.gridlast .img-3, .gridlast .img-5{
+  margin-left: 6%;
+}
+.gridlast .img-4{
+  margin-left: 9%;
+}
+.gridlast .img-1:hover,.gridlast .img-2:hover,.gridlast .img-3:hover,.gridlast .img-4:hover,.gridlast .img-5:hover,.gridlast .img-6:hover{
+  margin: 0;
+  position: relative;
+} 
+
+}
+@media screen and (max-width : 483px){
+  body{
+    overflow-x: hidden;
+    width: 538px;
+  }
+  .grid{
+    max-width: 100%;
+  }
+  .grid .grid-img .img-main{
+    height: 300px;
+  }
+  .grid .grid-content .content-title{
+    padding-left: 15px;
+    font-size: 30px;
+  }
+  .grid .grid-content .content-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .grid .grid-content .content-btn a:first-child,
+  .grid .grid-content .content-btn a:last-child{
+    padding: 10px 60px;
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+  .gridlast{
+    max-width: 483px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    margin-top: 50px;
+    max-width: 100%;
+  }
+.gridlast .last-title{
+  font-size: 25px;
+}
+.gridlast .last-img{
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.gridlast .img-1, .gridlast .img-2, .gridlast .img-3, 
+.gridlast .img-4, .gridlast .img-5, .gridlast .img-6{
+  height: 500px;
+  max-width: 100%;
+  transition: width 0.5s ease-in;
+}
+/* .gridlast .img-2, .gridlast .img-6{
+  margin-left: 3%;
+}
+.gridlast .img-3, .gridlast .img-5{
+  margin-left: 6%;
+}
+.gridlast .img-4{
+  margin-left: 9%;
+} */
+.gridlast .img-1:hover,.gridlast .img-2:hover,.gridlast .img-3:hover,.gridlast .img-4:hover,.gridlast .img-5:hover,.gridlast .img-6:hover{
+  margin: 0;
+  position: relative;
+} 
+}

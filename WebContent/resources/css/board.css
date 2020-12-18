@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', 'Noto Sans KR',sans-serif;
+}
+/* Header */
+#headers{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.naviforms{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 140px;
+   /*  padding-bottom: 50px; */
+    width: 100%;
+    max-width: 1000px;
+}
+.naviforms .faq{
+    font-size: 30px;
+    text-align: center;
+}
+.naviforms .topnav{
+    display: flex;
+    max-width: 1000px;
+    margin: 60px auto 80px auto;
+    padding: 15px 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid #888;
+}
+.naviforms .topnav ul{
+    padding: 0;
+}
+.naviforms .topnav ul li{
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0 30px;
+}
+.naviforms .topnav ul li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size:16px;
+    text-decoration: none;
+    position: relative;
+}
+.naviforms .topnav .nav-item a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: darkgray;
+    transition: all .5s ease-out;
+}
+.naviforms .topnav .nav-item a:hover::after{
+    width: 100%;
+}
+/* 개시판 */
+.topform .container .row{
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,500px);
+    gap: 50px;
+    margin-bottom: 70px;
+}
+.topform .container .row a{
+    text-decoration: none;
+}
+.topform .container .row .btn-more{
+	display:flex;
+	align-items:flex-end;
+	justify-content:center;
+	width:100%;
+    position: absolute;
+    bottom: 0;
+} 
+.topform .container .row .morebtn{
+    font-size: 15px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    padding: 10px 0;  
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.topform .container .row .paylist{
+	max-height: 800px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid gainsboro;
+    box-shadow: 5px 5px 5px 5px gainsboro;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+h2{
+   text-align: center;
+}
+.topform .container .row .paylist .type08{
+    width: 100%;
+    font-size: 14px;
+}
+.topform .container .row .paylist .card,
+.topform .container .row .paylist .payforms{
+	height: 100%;	
+}
+.topform .container .row .paylist .payforms h2{
+	font-size: 20px;
+	margin: 5px 0;
+}
+
+.delivery{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid gainsboro;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 5px 5px gainsboro;
+}
+.cancle{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid gainsboro;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 5px 5px gainsboro;
+}
+.reactied{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid gainsboro;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 5px 5px gainsboro;
+}
+table.type08 {
+    border-collapse: collapse;
+    line-height: 1.5;
+    width: 100%;
+  }
+  table.type08 thead tr{
+      text-align: center;
+  }
+  table.type08 thead th {
+    padding: 10px;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid gainsboro;
+    background: white;
+  }
+  table.type08 tbody th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-right: 1px solid white;
+    border-bottom: 1px solid #ccc;
+    background: white;
+  }
+  table.type08 tbody tr{
+      text-align: center;
+  }
+  table.type08 td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+/* 개시판 끝 */
+.question{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.question li{
+    list-style: none;
+}
+.question .title3{
+	margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+.question .title3 h2{
+    font-size: 30px;
+    margin-right: auto;
+    padding-left: 20px;
+}
+.question .title3 .listbtn{
+    font-size: 50px;
+    border: 1px solid white;
+    background-color: white;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    padding-right: 20px;
+  }
+.question .plusbtn .faq2{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid gainsboro;
+    margin: 10px 0;
+}
+.question .plusbtn .faq2 h2{
+    text-align: center;
+    font-size: 40px;
+}
+.question .plusbtn .faq2 .qnabtn{
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+}
+.question .plusbtn .faq2 h3{
+      margin: 0;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: bold;
+}
+.question .plusbtn .faq2 .cont{
+      font-size: 15px;
+      font-weight: bolder;
+      color: rgb(0,113,227);
+      text-align: left;
+}
+
+  @media screen and (max-width : 1000px){
+  .read-body{
+  	overflow-x: hidden;
+  }
+  .naviforms .topnav{
+  	padding: 0;
+  }
+  .question{
+  	padding: 0;
+  	margin: 0;
+  }
+  
+  .topform .container .row{
+  	grid-template-columns: 1fr;
+  	grid-template-rows: repeat(4,400px);  	
+  }
+  .topform .container .row .paylist{
+  margin: 0 30px;
+}

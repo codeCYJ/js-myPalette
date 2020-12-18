@@ -1,0 +1,169 @@
+body{
+    width: 55%;
+    min-height: 10vh;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right:auto;
+    box-shadow: #ddd 0px 0px 10px 5px;
+    background: rgb(252, 252, 252);
+    border-radius: 10px;
+}
+
+.title, .title h1 {
+    line-height: 48px;
+    line-height: 3rem;
+    font-size: 40px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: -3.2px;
+    letter-spacing: -0.2rem;
+  }
+  
+ #quizScore, #detail{
+   line-height: 48px;
+    line-height: 3rem;
+    font-size: 40px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: -3.2px;
+    letter-spacing: -0.2rem;
+  }
+#question1 {
+    overflow: hidden;
+    margin-left: 350px;
+    margin-right:350px;
+    margin-top: 200px;
+    height: 700px;
+    width: 500px;
+
+    
+}
+
+#question2 {
+    overflow: hidden;
+    margin-left: 350px;
+    margin-right:350px;
+    margin-top: 200px;
+    height: 700px;
+    width: 500px;
+    
+}
+
+#question3 {
+    overflow: hidden;
+    margin-left: 350px;
+    margin-right:350px;
+    margin-top: 200px;
+    height: 700px;
+    width: 500px;
+    
+}
+
+#question4 {
+    overflow: hidden;
+    margin-left: 350px;
+    margin-right:350px;
+    margin-top: 200px;
+    height: 700px;
+    width: 500px;
+    
+}
+
+#question5 {
+    overflow: hidden;
+    margin-left: 350px;
+    margin-right:350px;
+    margin-top: 200px;
+    height: 700px;
+    width: 500px;
+    
+}
+
+
+#button1{
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+#question1 button, #question2 button, #question3 button , #question4 button, #question5 button{
+    font-size: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    color: white;
+    width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    background-size: 300% 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  #question1 button:hover, #question2 button:hover ,#question3 button:hover ,#question4 button:hover ,#question5 button:hover{
+     background-position: 100% 0;
+     transition: all 0.4s ease-in-out;
+  }
+
+#question1 h1{
+    text-align: center;
+    color: rgb(0, 0, 0)(14, 14, 14);
+    padding: 20px;
+}
+#question2 h1{
+    text-align: center;
+    color: rgb(0, 0, 0)(14, 14, 14);
+    padding: 20px;
+}
+#question3 h1{
+    text-align: center;
+    color: rgb(0, 0, 0)(14, 14, 14);
+    padding: 20px;
+}
+#question4 h1{
+    text-align: center;
+    color: rgb(0, 0, 0)(14, 14, 14);
+    padding: 20px;
+}
+#question5 h1{
+    text-align: center;
+    color: rgb(0, 0, 0)(14, 14, 14);
+    padding: 20px;
+}
+
+#as1, #ad1, #as2, #ad2,#as3, #ad3,#as4, #ad4, #as5, #ad5{
+    margin-top: 20px;
+}
+
+
+/* --------------------------------------결과페이지 */
+#center{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+#quizScore {
+    overflow: hidden;
+    width: 100%;
+    font-size: 32px;
+    font:bolder;
+    color: rgb(0, 0, 0);
+}
+
+#test{
+    border-radius: 10px;
+    margin: 20px auto 20px auto;
+    background-size: cover;
+}
+#detail{
+    text-decoration: none;
+    color: black;
+    font-size:20px ;
+    width: 100%;
+    text-align: center;
+    maring-bottom:10px;
+    
+}

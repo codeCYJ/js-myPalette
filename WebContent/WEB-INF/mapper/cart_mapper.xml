@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 다른 mapper와 중복되지 않도록 네임스페이스 기재 -->
+<mapper namespace="cart">
+	<!-- 장바구니에 담기 -->
+	<insert id="insert">
+		insert into cart_table (cart_id, user_id, product_id, amount)
+		values
+		(cart_seq.nextval, #{user_id}, #{product_id}, #{amount} )
+
+		<!--//장바구니 담기 버튼을 누를때 실행되는 쿼리문 //cart_id와 user_id, product_id, amount 값을 
+			저장한다. //cart_id는 하나씩 증가되어야하기때문에 시퀀스값으로 지정한다. -->
+	</insert>
+
+	<select id="listCart" resultType="com.tjoeun.spring.beans.CartDTO">
+
+select p.product_purchase_img, c.cart_id, p.product_id, c.user_id, m.user_name, p.product_name, c.amount, p.product_price, (p.product_price*amount) money
+from user_table m, cart_table c, product_table p       
+where m.user_id=c.user_id and c.product_id=p.product_id and c.user_id=#{user_id} order by c.cart_id
+		<!-- 장바구니의 번호, 상품 번호, 회원번호, 회원이름, 상품이름, 상품의양, 상품1개의 가격, 상품의 전체가격을 검색한다. -->
+		<!--회원테이블의 회원id와 장바구니테이블의 회원id가 같고, 장바구니의 상품id와 상품테이블의 상품id가 같고, 장바구니테이블의 
+			회원id가 장바구니에 저장되있는 회원id와 같을때 -->
+		<!-- 장바구니에 관한 정보를 담은 sql문이다. -->
+
+	</select>
+
+	<select id="sumMoney" resultType="int">
+
+        select nvl(sum(product_price*amount),0)
+        from cart_table c,product_table p
+        <!-- 아무것도 담지 않았을때를 확인하는 것 -->
+        where c.product_id=p.product_id and user_id=#{user_id}
+        <!--조건 : 장바구니테이블의 상품 id가 상품테이블의 상품 id와 같고, 요청하는 회원의 id와 같은 경우 -->
+
+    </select>
+	
+	<delete id="delete">
+        delete from cart_table where cart_id=#{cart_id}
+    </delete>
+	
+	
+	
+	 <delete id="deleteAll">
+        delete from cart_table where user_id=#{user_id}
+        <!-- 장바구니테이블로부터 회원의 아이디와 삭제하고자하는 회원의 아이디가 같으면 장바구니에 있는 자료를 전부다 삭제 -->
+    </delete>
+	
+	
+</mapper>

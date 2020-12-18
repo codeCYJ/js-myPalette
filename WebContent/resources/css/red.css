@@ -1,0 +1,450 @@
+@import 'AppleNav.css';
+@import 'footer.css';
+
+#tothetop { 
+  position: fixed; bottom: 1rem; right: 1rem; cursor: pointer;
+ 
+}
+.tothetop{
+  margin: 0px 50px 50px;
+  border-radius: 3px;
+  border-bottom: 1px solid black;
+  padding: 10px 10px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', 'Noto Sans KR',sans-serif;
+}
+/* Header */
+#headers{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Header 아래 Notice */
+.topNotice{
+  padding: 10px;
+  font-size: 12px;
+  display: flex;
+  color: #5B5B5C;
+  justify-content: center;
+  font-weight: bolder;
+}
+.topNotice .pBlue{
+  color: #0F6FCF;
+  font-size: 12px;
+  font-weight: bolder;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.topNotice .pBlue:hover{
+  border-bottom: 1px solid #0066CC;
+}
+
+/* 메인 컨텐츠 */
+
+/* 1번 컨텐츠 흰색*/
+.item1{
+  background-image: url(../image/red/red_main1.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.item1Content{
+  right: 100px;
+  bottom: 70px;
+}
+.item1Content p{
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 7px 0;
+  color: white;
+}
+.item1Content h1{
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.itemBtn1{  /* 상위 6개 아이템의 더보기/주문하기 버튼 */
+  margin-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  border: none;
+}
+.itemBtn2{ /* 하위 6개 아이템의 더보기/주문하기 버튼 */
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  border : 2px solid none;
+}
+.itemBtn1 i,.itemBtn2 i{ /* 버튼 뒤의 > 표시 */
+  padding-left: 5px;
+  color: white; 
+  cursor: pointer;
+}
+.itemBtn1 button, .itemBtn2 button{
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 40px;
+  border: none;
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  padding-bottom: 1px;
+  outline: none;
+}
+.itemBtn1 button:hover,
+.itemBtn2 button:hover{
+  border-bottom: 1px solid white; 
+}
+.itemBtn2 button{font-size: 15px; font-weight: bold;}
+
+/* 2번 컨텐츠  검은색 */
+.item2{
+  background: url(../image/red/red_main2.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.item2Content p, .item3Content p{
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 7px 0;
+  color: black;
+}
+.item2Content h1, .item3Content h1{
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-shadow: 3px 0px 7px rgba(255, 255, 255, 0.8), -3px 0px 7px rgba(255, 255, 255, 0.8), 0px 4px 7px rgba(255, 255, 255, 0.8);
+}
+.item2Content>.itemBtn1 button, .item2Content>.itemBtn1 i,
+.item3Content>.itemBtn1 button, .item3Content>.itemBtn1 i{
+  color: black;
+  padding-bottom: 1px;
+}
+.item2Content>.itemBtn1 button:hover,
+.item3Content>.itemBtn1 button:hover{
+  border-bottom: 1px solid black;
+}
+
+
+/* 3번 컨텐츠 */
+.item3{
+  background: url(../image/red/red_main3.png) no-repeat center center fixed;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 33%;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.item3Content{
+  flex-direction: column;
+}
+.item3Content p, .item3Content>.itemBtn1 button, .item3Content>.itemBtn1 i{
+  text-shadow: 3px 0px 7px rgba(255, 255, 255, 1), -3px 0px 7px rgba(255, 255, 255, 1), 0px 4px 7px rgba(255, 255, 255, 1);
+}  
+.item4{
+  background-image: url(../image/red/red_main4.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-color: black;
+  min-height: 75vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.item4Content h1{
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 7px 0;
+  color: white;
+  margin-bottom: 30px;
+}
+.item4Content p{
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+.item4Content>.itemBtn1 button, .item4Content>.itemBtn1 i{
+  color: white;
+  padding-bottom: 1px;
+}
+.item4Content>.itemBtn1 button:hover{border-bottom: 1px solid white;}
+
+.item5{
+  background-image: url(../image/red/red_main5.jpg);
+  background-size: cover;
+  background-color: #b8484b;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.item5 .item5Content .content-title{
+  display: flex;
+}
+.item5 .item5Content .content-title h1{
+  font-weight: 900;
+  font-size: 5vw;
+  margin-bottom: 20px;
+}
+.item5 .item5Content .content-title .title1{
+  color: #d2afa9;
+}
+.item5 .item5Content .content-title .title2{
+  color: #b8484b;
+}
+.item5Content p{
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+.item5 .itemBtn1 .itemMore1, .item5 .itemBtn1 div:first-child i{
+  color: #d2afa9;
+}
+.item5 .itemBtn1 .itemBuy1, .item5 .itemBtn1 div:last-child i{
+  color: #b8484b;
+}
+.item5 .itemBtn1 .itemMore1:hover{
+  border-bottom: 1px solid #d2afa9;
+}
+.item5 .itemBtn1 .itemBuy1:hover{
+  border-bottom: 1px solid #b8484b;
+}
+
+.item6{
+  background-image: url(../image/red/red_main6.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-bottom: 12px;
+}
+.item6 h1{
+  margin: 30px 0;
+  font-size: 5vw;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+}
+.item6 p{
+  letter-spacing: 5px;
+  font-size: 2vw;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+
+.itemBox{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 70vh);
+  margin: 12px auto;
+}
+.card1{
+  background-image: url(../image/red/red_card1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.card5{
+  background-image: url(../image/red/red_card2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+} 
+.card3{
+  background-image: url(../image/red/red_card3.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background-color: #000;
+}
+.card4{
+  background-image: url(../image/red/red_card4.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background-color: #000;
+} 
+.card2{
+  background-image: url(../image/red/red_card5.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background-color: #000;
+}
+.card6{
+  background-image: url(../image/red/red_card6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.card1Content h1, .card2Content h1, .card3Content h1, .card4Content h1,
+.card5Content h1, .card6Content h1{
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 7px 0;
+  color: white;
+}
+/* .card1Content h1:hover, .card2Content h1:hover, .card3Content h1:hover, .card4Content h1:hover,
+.card5Content h1:hover, .card6Content h1:hover{
+  animation: neon5 1.5s ease-in-out infinite alternate;
+} */
+.card1Content h2, .card2Content h2, .card3Content h2, .card4Content h2,
+.card5Content h2, .card6Content h2{
+  font-size: 2vw;
+  color: white;
+  text-align: center;
+}
+.card1Content p, .card2Content p, .card3Content p, .card4Content p,
+.card5Content p, .card6Content p{
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+.card1Content>.itemBtn1 button, .card1Content>.itemBtn1 i{
+  color: white;
+}
+.card1Content>.itemBtn1 button:hover{
+  border-bottom: 1px solid black;
+}
+
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+/* Footer */
+
+/* 반응형 */
+@media screen and (max-width : 1045px){
+  .itemBox{
+    display: grid;
+    gap: 12px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 12px;
+  }
+  .item1, .item2, .item3, .item4, .item5, .item6{
+    min-height: 70vh;
+  }
+  .card1, .card2, .card3, .card4, .card5, .card6{
+    min-height: 42vh;
+  }
+}
+@media screen and (max-width : 747px){
+  .topBarList{
+    display: none;
+  }
+  .topBarListPhone{
+    display: flex;
+  }
+  .item9{
+    align-items: center;
+  }
+  .footerContentBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .footerContentList{
+    display: none;
+  }
+  .footerTitle{
+    padding: 10px 5px;
+    border-bottom: 1px solid #D2D2D7;
+  }
+  .footerContent1, .footerContent2, .footerContent3, .footerContent4, .footerContent5{
+    width: 100%;
+  }
+}
+@media screen and (max-width : 710px){
+  .topNotice{
+    max-width: 331px;
+    padding: 13px 0;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 11px;
+  }
+  .item1, .item2, .item3, .item4, .item5, .item6{
+    min-height: 55vh;
+  }
+  .itemBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .card1, .card2, .card3, .card4, .card5, .card6{
+    height: 48vh;
+    justify-content: center;
+  }
+  .itemBtn1{
+    min-width: 250px;
+    text-align: center;
+  }
+  .itemBtn2{
+    min-width: 200px;
+  }
+}
+

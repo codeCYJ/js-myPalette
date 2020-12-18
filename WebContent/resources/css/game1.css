@@ -1,0 +1,90 @@
+#wrap {
+	position: relative;
+	overflow: hidden;
+	margin-top: 50px;
+	width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+}
+
+.container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 20px 0 25px 0;
+	width: 100%;
+	min-width: 100%;
+}
+
+#question {
+	min-height: 100vh;
+	box-shadow: #ddd 0px 0px 10px 5px;
+	background: rgb(252, 252, 252);
+}
+
+#title-box {
+	text-align: center;
+	animation: fade-in 0.5s ease-out 0.3s both, going-down 0.5s ease-out
+		0.3s both;
+}
+
+#wrap button {
+	font-size: 15px;
+	margin-bottom: 30px;
+	border-radius: 8px;
+	color: white;
+	width: 250px;
+	height: 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+	box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+	background-size: 300% 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+#wrap button:hover {
+	background-position: 100% 0;
+	transition: all 0.4s ease-in-out;
+}
+
+#wrap h1 {
+	text-align: center;
+	color: rgb(0, 0, 0)(14, 14, 14);
+	padding: 20px;
+}
+
+#as1, #ad1, #as2, #ad2, #as3, #ad3, #as4, #ad4, #as5, #ad5 {
+	margin-top: 20px;
+}
+
+
+
+/* --------------------------------------결과페이지 */
+#center {
+	width: 100%;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#quizScore {
+	overflow: hidden;
+	width: 100%;
+	font-size: 32px;
+	font: bolder;
+	color: rgb(0, 0, 0);
+}
+
+#test {
+	border-radius: 10px;
+	margin: 70px auto 30px auto;
+	background-size: cover;
+}
+
+#detail {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                      http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!-- 
+   Data를 저장하거나 관리 목적으로 사용하는
+   Bean들은 root-context.xml 에 저장함
+  -->
+  <bean id="loginUserBean" 
+     class="com.tjoeun.spring.beans.UserDTO"
+     scope="session" />
+
+</beans>
+
+
+
+
+
+
+
+
+
+

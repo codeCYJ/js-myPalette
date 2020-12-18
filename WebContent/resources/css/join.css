@@ -1,0 +1,113 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', 'Noto Sans KR',sans-serif;
+  text-decoration: none;
+}
+
+.nameAddress input{
+  margin: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  height: 45px;
+  width: 400px;
+  outline: none;
+  padding-left: 15px;
+}
+.background{
+  background-image: url("https://source.unsplash.com/random/1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background h1{
+	font-size: 25px;
+}
+.nameAddress{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+.nameAddress .idcheck input{
+	margin-left: 88px;
+}
+.nameAddress .idcheck button{
+	background: white;
+	color: black;
+	height: 48px;
+	width: 75px;
+	font-size: 15px;
+	border: 1px solid black;
+	outline: none;
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+	}
+.nameAddress .idcheck button:hover{
+	background: black;
+	color: white;
+	transition: all 0.4s ease-in-out;
+}
+.nameAddress .text{
+	font-size: 15px;
+	text-align: center;
+}
+.nameAddress .explain{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.nameAddress .explain a{
+	color: #142787;
+	}
+.nameAddress .explain a:visited{
+	color: #142787;
+}
+
+
+input[type="submit"],input[type="reset"]{
+  color: white;
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.5);
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+  padding: 2px 65px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600; 
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+	background-position: 100% 0;
+	transition: all 0.4s ease-in-out;
+}
+input[type="reset"]{
+	margin-top: 30px;
+}
+input[type="submit"]{
+	margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 619px){
+	  .nameAddress input{
+	  width: 280px;
+	}
+}	
+@media only screen and (max-width: 499px){
+	  .nameAddress input{
+	  width: 150px;
+	}
+}	
+	

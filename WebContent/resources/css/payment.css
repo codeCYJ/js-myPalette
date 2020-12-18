@@ -1,0 +1,236 @@
+@import 'AppleNav.css';
+@import 'footer.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', 'Noto Sans KR',sans-serif;
+}
+/*layout*/
+#headers{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.shopping{
+  font-family: 'Noto Sans', 'Noto Sans KR',sans-serif;
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+.shoppinginfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shoppinginfo span{
+    width: 17%;
+    height: 1px;
+    margin: 20px;
+    background-color: #eee;
+}
+.shoppinginfo p{
+  font-size: 38px;
+  margin: 30px 20px;
+}
+.paymentmethod i{
+  font-size: 30px;
+  color: rgb(109, 199, 194);
+  padding-top: 8px;
+}
+.paymentmethod button{
+  background-color: white;
+  width: 100px;
+  height: 80px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px;
+}
+.paymentmethod p{
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 7px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.shopping .main{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.shopping .content{
+	width: 100%;
+}
+.main .main-address,
+.main .main-info{
+  border: 1px solid #eee;
+  width: 100%;
+  margin: 50px 25px;
+  height: 80vh;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+.main .main-address p,
+.main .main-info p{
+  font-size: 1.3em;
+  text-align: left;
+  padding-left: 20px; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  width: 90%;
+}
+.main .main-address .address-title h1,
+.main .main-info .info-title h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 30px 0 60px 0;
+  letter-spacing: 1px;
+}
+.main .main-address input,
+.main .main-info input{
+  border: none;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  width: 83%;
+  outline: none;
+  float: left;
+  margin: 15px 0 30px 20px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.complete{
+  font-size: 14px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:  #888;
+}
+.complete a{
+  border: 1px solid  #eee;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #888;
+}
+.complete a:hover{
+  color: black;
+  border: 1px solid #888;
+}
+.complete span{
+  width: 25%;
+  height: 1px;
+  margin: 20px;
+  background-color: #eee;
+}
+.complete:hover span{ 
+  background-color: #888;
+}
+
+/* card rainbow border*/
+
+#container #card{
+  position: relative;
+  overflow: hidden;
+}
+#container:hover #card{
+  opacity: 0.5;
+}
+#container #card:hover{
+  opacity: 1;
+}
+#container #card .content p,
+#container #card .content h1{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+#container #card:hover .content p,
+#container #card:hover .content h1{
+  opacity: 1;
+}
+#container #card span{
+  transition: 0.5;
+  opacity: 0;
+}
+#container #card:hover span{
+  opacity: 0.4;
+}
+
+
+#container #card span:nth-child(1){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, red, orange , yellow, green, cyan, blue, violet);
+  animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+#container #card span:nth-child(2){
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, red, orange , yellow, green, cyan, blue, violet);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate2{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(100%);
+  }
+}
+#container #card span:nth-child(3){
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, transparent, red, orange , yellow, green, cyan, blue, violet);
+  animation: animate3 2s linear infinite;
+}
+@keyframes animate3{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+#container #card span:nth-child(4){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to top, transparent,  red, orange , yellow, green, cyan, blue, violet);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate4{
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(-100%);
+  }
+}

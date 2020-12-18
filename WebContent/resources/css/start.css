@@ -1,0 +1,230 @@
+#wrap {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+  }
+  .container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    min-width: 100%;
+  }
+  @media all and (min-width: 768px) {
+    /* qna에서 margin-top을 없애야 함 */
+    #wrap {
+      margin-top: 100px; 
+    }
+    .container {
+      padding: 60px 5% 37.5px 5%;
+      width: 80%;
+      min-width: 80%;
+      border-radius: 20px;
+    }
+  }
+  
+  @media all and (min-width: 1024px) {
+    /* qna에서 margin-top을 없애야 함 */
+    #wrap {
+       margin-top: 70px; 
+    }
+    .container {
+      padding: 100px 5% 40px 5%;
+      width: 70%;
+      min-width: 70%;
+      border-radius: 30px;
+    }
+  }
+  
+  @media all and (min-width: 1440px) {
+    .container {
+      padding: 40px 3.5% 40px 3.5%; 
+      width: 55%;
+      min-width: 55%;
+    }
+  }
+
+  #welcome {
+    min-height: 100vh;
+    box-shadow: #ddd 0px 0px 10px 5px;
+    background: rgb(252, 252, 252);
+  }
+  #title-box {
+    text-align: center;
+   /*  animation: fade-in 0.5s ease-out 0.3s both, 
+            going-down 0.5s ease-out 0.3s both; */
+  }
+  #title-box > div {
+    margin: 10px 0 auto;
+  }
+  #title-box > div:first-child {
+    margin-top: 0px;
+  }
+ 
+  .title, .title h1 {
+    line-height: 48px;
+    line-height: 3rem;
+    font-size: 40px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: -3.2px;
+    letter-spacing: -0.2rem;
+  }
+  .sec-tit {
+    line-height: 35.2px;
+    line-height: 2.2rem;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 6.4px;
+    letter-spacing: 0.4rem;
+  }
+  
+  #welcome > p:first-of-type {
+    padding: 0 5%;
+    line-height: 19.2px;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+  #p-tit {
+    display: block;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  
+ 
+  .start-wrap {
+    margin: 0 20% 20px 20%;
+    width: 60%;
+  }
+  .start {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgba(29, 29, 29, 0.9);
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    font-size: 2rem;
+    cursor: pointer;
+  }  
+  .start:hover, .start:focus {
+    animation-play-state: paused;
+  }
+  .start:active {
+    animation-play-state: running;
+  }
+
+
+
+
+  @media all and (min-width: 768px) {
+    #title-box > div {
+      margin: 30px 0 auto;
+    }
+    #title-box > div:last-child {
+      margin: 20px 0 auto;
+      margin-bottom: 30px;
+    }
+    .title {
+      line-height: 80px;
+      line-height: 5rem;
+      font-size: 59.2px;
+      font-size: 3.7rem;
+    }
+    .sec-tit {
+      line-height: 64px;
+      line-height: 4rem;
+      font-size: 40px;
+      font-size: 2.5rem;
+      font-weight: lighter;
+      letter-spacing: 8px;
+      letter-spacing: 0.5rem;
+    }
+    .time-logo + div {
+      font-size: 17.6px;
+      font-size: 1.1rem;
+      letter-spacing: -0.8px;
+      letter-spacing: -0.05rem;
+    }
+    #welcome > p:first-of-type {
+ /*      padding: 0 15%; */
+    }
+    #p-tit {
+      font-size: 28.8px;
+      font-size: 1.8rem;
+    }
+   
+    .start-wrap {
+      margin: 0px 20% 50px 20%;
+      width: 60%;
+    }
+    .start {
+      min-width: 80%;
+      height: 100px;
+      line-height: 100px;
+      font-size: 48px;
+      font-size: 3rem;
+    }
+  }
+  
+  @media all and (min-width: 1024px) {
+    #title-box > div {
+      margin: 60px 0 auto;
+    }
+    .title {
+      line-height: 88px;
+      line-height: 5.5rem;
+      font-size: 67.2px;
+      font-size: 4.2rem;
+    }
+    .sec-tit {
+      line-height: 56px;
+      line-height: 3.5rem;
+      font-size: 40px;
+      font-size: 2.5rem;
+      font-weight: lighter;
+    } 
+    hr {
+      margin: 30px 5% 20px 5%;
+      width: 90%;
+    }
+    .time-logo + div {
+      font-size: 19.2px;
+      font-size: 1.2rem;
+      letter-spacing: -1.28px;
+      letter-spacing: -0.08rem;
+    }
+    #welcome > p:first-of-type {
+      padding: 0 17.5%;
+      line-height: 27.2px;
+      line-height: 1.7rem;
+      font-size: 17.6px;
+      font-size: 1.1rem;
+    }
+    #p-tit {
+      font-size: 32px;
+      font-size: 2rem;
+    }
+    .check-name {
+      font-size: 19.2px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media all and (min-width: 1440px) {
+    hr {
+      margin: 35px 5% 35px 5%;
+      width: 90%;
+    }
+  }

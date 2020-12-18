@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', 'Noto Sans KR',sans-serif;
+}
+/* Header */
+#headers{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.write-container{
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+}
+.card-body{
+	max-width: 1000px;
+	height: 100%;
+	margin: 0 auto 200px auto;
+	border: 1px solid #d3d3d3;
+}
+.form-group{
+	max-width: 900px;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+}
+.form-control{
+	border: 1px solid #d3d3d3;
+	padding: 10px;
+	margin-top: 5px;
+}
+#file-upload-button{
+	color: black;
+	font-weight: 600;
+	background-image: linear-gradient(to right, #E2E2E2, #e9e9e9, #bdbebd, #d3d3d3);
+	box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.5);
+	background-size: 300% 100%;
+	transition: all 0.4s ease-in-out;
+	width: 150px;
+	height: 50px;
+}
+
+#file-upload-button:hover {
+	background-position: 100% 0;
+	transition: all 0.4s ease-in-out;
+}
+	
+.text-right{
+	text-align: right;
+}
+.text-right button{
+	color: white;
+	font-weight: 600;
+	background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+	box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.5);
+	background-size: 300% 100%;
+	transition: all 0.4s ease-in-out;
+	width: 150px;
+	height: 50px;
+}
+
+.text-right button:hover {
+	background-position: 100% 0;
+	transition: all 0.4s ease-in-out;
+}
+		
+}

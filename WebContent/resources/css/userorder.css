@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
+}
+/* Header */
+#headers {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.user-delete {
+	margin-top: 10px;
+	text-align: right;
+}
+.user-delete h6{
+	font-size: 16px;
+}
+.payinfo .container {
+	height: 60vh;
+	display: grid;
+	grid-template-columns: 20% 80%;
+	max-width: 1000px;
+	margin: 70px auto;
+	padding: 50px;
+	font-size: 16px;
+	z-index: -3;
+}
+
+.payinfo .container .list ul {
+	line-height: 2rem;
+}
+
+.payinfo .container .list .name {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.payinfo .container .list ul li:first-child {
+	margin-top: 50px;
+}
+
+.payinfo .container .list ul li:first-child, .payinfo .container .list ul li:nth-child(4),
+	.payinfo .container .list ul li:nth-child(6) {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.payinfo .container .list ul li:nth-child(3), .payinfo .container .list ul li:nth-child(5)
+	{
+	margin-bottom: 50px;
+}
+
+.payinfo .container .paylist {
+	max-width: 1200px;
+	position: relative;
+	z-index: -3;
+}
+
+.payinfo .container .paylist .paytitle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 5px solid black;
+}
+
+.payinfo .container .paylist .paynav ul, .payinfo .container .paylist .paylist-inlist
+	{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 5px;
+	border-bottom: 1px solid black;
+}
+
+.payinfo .container .paylist .paylist-inlist {
+	padding: 5px;
+}
+
+.payinfo .container .paylist .paylist-inlist img {
+	margin-right: 10px;
+}
+
+.payinfo .container .paylist .paynav ul {
+	font-weight: 600;
+}
+
+.payinfo .container .paylist p {
+	width: 100px;
+	text-align: center;
+}
+
+.payinfo .container .paylist .inlist-first p:last-child {
+	margin-left: 200px;
+	position: absolute;
+}
+
+.payinfo .container .paylist .paynav ul li {
+	width: 100px;
+	text-align: center;
+}
+
+.payinfo .container .paylist .paylist-out {
+	display: flex;
+	flex-direction: column;
+}
+
+.payinfo .container .paylist .paylist-inlist .inlist-first {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	width: 140px;
+	text-align: center;
+}
+
+.payinfo .container .paylist .paylist-inlist .inlist-first img {
+	width: 60px;
+	height: 60px;
+	background-color: blue;
+}
+
+@media screen and (max-width:650px) {
+	
+	.payinfo .container {
+	height:61vh;
+		font-size: 14px;
+		padding: 0 10px;
+	}
+	.payinfo .container .list ul li:first-child, .payinfo .container .list ul li:nth-child(4),
+		.payinfo .container .list ul li:nth-child(6) {
+		font-size: 15px;
+	}
+	.payinfo .container .paylist .paytitle{
+		border-bottom: 2px solid black;
+	}
+	h1 {
+		font-size: 18px;
+	}
+}

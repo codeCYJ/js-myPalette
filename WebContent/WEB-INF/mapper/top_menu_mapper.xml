@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+                        
+<mapper namespace="topmenu">
+ <!--
+  <insert id="insert_topmenu_list"
+  parameterType="com.tjoeun.spring.beans.BoardInfoDTO">
+    <![CDATA[
+        
+    ]]>
+  </insert>
+   -->
+  <select id="get_topmenu_list"
+  resultType="com.tjoeun.spring.beans.TopDTO">
+    <![CDATA[
+        select top_info_idx, top_info_name
+        from top_info_table
+        order by top_info_idx  
+    ]]>
+  </select>
+  
+</mapper>                        
+
+
+
+
+
+
+

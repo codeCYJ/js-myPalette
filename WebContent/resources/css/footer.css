@@ -1,0 +1,81 @@
+.footer {
+	background-color: #F5F5F7;
+	padding: 25px auto;
+	width: 100%;
+	height: 100%;
+}
+.footerNav {
+	width: 100%;
+}
+.footerContentBox {
+	max-width: 1000px;
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.footerContentBox li {
+	list-style: none;
+}
+
+.footerNC {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.footerNotice {
+	color: #8D8E91;
+	font-size: 12px;
+	border-bottom: 1px solid #D2D2D7;
+	padding-bottom: 10px;
+}
+
+.footerNotice .pBlue {
+	color: #4F7CD9;
+	font-size: 12px;
+	font-weight: bolder;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+.footerNotice .pBlue:hover {
+	border-bottom: 1px solid #0066CC;
+}
+
+.footerCopyright {
+	color: #8D8E91;
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+
+.footerCopyright1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footerCopyright1 button {
+	color: #545757;
+	font-size: 12px;
+	font-weight: bolder;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	padding: 0 10px;
+	margin: 10px 0;
+}
+
+.footerCopyright1 .copyrightBtn1, .footerCopyright1 .copyrightBtn2,
+	.footerCopyright1 .copyrightBtn3, .footerCopyright1 .copyrightBtn4 {
+	border-right: 1px solid #8D8E91;
+}
+
+.footerCopyright1 button:hover {
+	border-bottom: 1px solid black;
+}
+
+.footerCopyright2 {
+	font-size: 11px;
+}

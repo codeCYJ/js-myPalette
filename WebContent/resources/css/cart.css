@@ -1,0 +1,1084 @@
+@charset "utf-8";
+
+@import 'topNav.css';
+
+@import 'footer.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', 'Noto Sans KR',sans-serif;
+}
+/*layout*/
+#headers{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.wrap {
+	width: 100%;
+	font-size: 15px;
+}
+/* visual */
+.visuallogout {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	max-width: 1000px;
+}
+
+.visuallogout .titlelogout {
+	color: #fff;
+}
+
+.visuallogout .titlelogout h2 {
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 10px;
+	color: black;
+}
+
+.visuallogout .titlelogout p {
+	text-align: center;
+	color: black;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.visuallogout .menu {
+	margin: 0 auto;
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.visuallogout .menu li {
+	float: left;
+	list-style: none;
+}
+
+.visuallogout .menu li a p {
+	float: left;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+.login, .welcomeM {
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
+}
+
+.login {
+	color: white;
+	font-weight: 600;
+	background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+	box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.5);
+	background-size: 300% 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.login:hover {
+	background-position: 100% 0;
+	transition: all 0.4s ease-in-out;
+}
+
+.welcomeM {
+	color: black;
+	font-weight: 600;
+	background-image: linear-gradient(to right, #E2E2E2, #e9e9e9, #bdbebd, #d3d3d3);
+	box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.5);
+	background-size: 300% 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.welcomeM:hover {
+	background-position: 100% 0;
+	transition: all 0.4s ease-in-out;
+}
+
+.visuallogout .img img {
+	transform: scale(1);
+	animation-name: scaleani;
+	animation-duration: 2s;
+}
+
+.item {
+	font-size: 30px;
+}
+
+section.middle {
+	max-width: 1000px;
+	margin-top: 60px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid gainsboro;
+	border-top: 1px solid gainsboro;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+section.middle button:hover {
+	cursor: pointer;
+}
+
+.title2 h2 {
+	max-width: 1000px;
+	text-align: center;
+}
+
+section.about {
+	max-width: 1000px;
+	margin: 20px auto;
+	text-align: center;
+	padding: 20px;
+}
+
+section.about img {
+	width: 980px;
+	height: 400px;
+}
+
+section.about ul {
+	list-style: none;
+}
+
+section.about .inner {
+	width: 100%;
+	height: 400px;
+	background-image: url(../image/moreshopping.jpg);
+	background-size: cover;
+	background-position: bottom;
+}
+
+section.about .inner .innerContent {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+section.about .inner .innerContent h3 {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+section.about button:hover {
+	cursor: pointer;
+}
+
+section.about .inner .innerContent:hover {
+	backdrop-filter: blur(5px);
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatbtn {
+	font-weight: bold;
+	border: 1px solid white;
+	background-color: white;
+	color: #142787;
+	padding: 5px;
+	border: 0;
+	outline: 0;
+	font-size: 23px;
+}
+
+.shopbtn {
+	font-weight: 700;
+	background: none;
+	margin-top: 15px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	margin-top: 15px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	color: white;
+}
+
+section.question {
+	border-top: 1px solid gainsboro;
+	padding: 10px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+section.question li {
+	list-style: none;
+}
+
+.title3 {
+	width: 100%;
+	display: flex;
+}
+
+.title3 h2 {
+	margin-top: 30px;
+	font-size: 30px;
+	margin-right: auto;
+	padding-left: 20px;
+}
+
+.listbtn {
+	font-size: 50px;
+	border: 1px solid white;
+	background-color: white;
+	color: gray;
+	padding: 10px;
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+}
+
+.togglebtn {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+
+.social-icons {
+	margin: 30px auto;
+	text-align: center;
+}
+
+.social-icons img {
+	width: 30px;
+	cursor: pointer;
+}
+
+.input-group {
+	top: 180px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+
+.input-field {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border: none;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.submit {
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right,);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.checkbox {
+	margin: 30px 10px 30px 0;
+}
+
+.footer {
+	width: 100%;
+}
+
+@
+keyframes slide-up { 0%{
+	opacity: 0;
+}
+
+40
+%
+{
+opacity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+;
+transform
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+translateY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(
+40
+px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
+;
+}
+}
+section.visual .title h2 {
+	animation-name: slide-up;
+	animation-duration: 1.5s;
+}
+
+section.visual .title p {
+	animation-name: slide-up;
+	animation-duration: 2.2s;
+}
+
+section.visual .menu {
+	animation-name: slide-up;
+	animation-duration: 2.8s;
+}
+
+@
+keyframes scaleani { 0%{
+	transform: scale(1.3);
+}
+
+30
+%
+{
+transform
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+scale
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(
+1
+.3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
+;
+}
+}
+.qnabtn {
+	font-weight: bold;
+	border: 1px solid white;
+	background-color: white;
+	color: rgb(0, 113, 227);
+	padding: 5px;
+	cursor: pointer;
+}
+
+.pickbtn {
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid white;
+	background-color: white;
+	color: rgb(0, 113, 227);
+	padding: 5px;
+	cursor: pointer;
+}
+
+.pickbtn:hover {
+	text-decoration: underline;
+}
+
+hr {
+	border-top: 1px solid black;
+}
+
+.faq {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.faq button {
+	outline: none;
+}
+
+.faq h3 {
+	font-size: 17px;
+	color: black;
+}
+
+/*--------------------------------------장바구니 로그인후 css-------------------------------------------  */
+.visual {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	align-items: center;
+	width: 100%;
+	color: black;
+}
+
+.visual .title h2 {
+	font-size: 35px;
+	color: black;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+section.visual .title {
+	color: black;
+}
+
+section.visual .title p {
+	font-size: 15px;
+	font-weight: 300;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+section.visual .menu li {
+	width: 100%;
+	text-align: center;
+	list-style: none;
+}
+
+.pay2 {
+	font-size: 15px;
+	font-weight: 500;
+	border: 1px solid white;
+	border-radius: 8px;
+	background-color: rgb(0, 113, 227);
+	color: white;
+	padding: 18px 140px;
+	border: 0;
+	outline: 0;
+	margin-top: 20px;
+}
+
+.deletebtn, .paymentbtn {
+	width: 100%;
+	text-align: center;
+}
+
+.pay, .btnDelete {
+	font-size: 15px;
+	margin-bottom: 30px;
+	border-radius: 8px;
+	color: white;
+	width: 250px;
+	height: 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+	box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+	background-size: 300% 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.pay:hover, .btnDelete:hover {
+	background-position: 100% 0;
+	transition: all 0.4s ease-in-out;
+}
+
+.visual button:hover {
+	cursor: pointer;
+	background-color: rgb(4, 119, 233);
+}
+
+.pay2:hover {
+	cursor: pointer;
+	background-color: rgb(4, 119, 233);
+}
+
+@
+keyframes slide-up { 0%{
+	opacity: 0;
+}
+
+40
+%
+{
+opacity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+;
+transform
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+translateY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(
+40
+px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
+;
+}
+}
+section.visual .title h2 {
+	animation-name: slide-up;
+	animation-duration: 1.5s;
+}
+
+section.visual .title p {
+	animation-name: slide-up;
+	animation-duration: 2.2s;
+}
+
+section.visual .menu {
+	animation-name: slide-up;
+	animation-duration: 2.8s;
+}
+
+@
+keyframes scaleani { 0%{
+	transform: scale(1.3);
+}
+
+30%{
+transform
+:
+ 
+scale
+(1
+.3
+);
+
+	
+}
+}
+section.paybox {
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto 30px auto;
+	padding-bottom: 5px;
+	max-width: 1000px;
+}
+
+.paybox .result-0 {
+	margin-bottom: 15px;
+	font-size: 18px;
+	font-weight: 800;
+	max-width: 1000px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	padding: 15px 0;
+}
+
+.paybox .result-0 .result-0-list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.paybox .result-0 .result-0-list li {
+	flex: 1;
+	margin-left: 30px;
+	text-align: center;
+}
+
+.paybox .result-0 .result-0-list li:last-child {
+	text-align: right;
+	margin: 0 65px 0 0;
+}
+
+.Mac1 .reSize {
+	height: 100px;
+	width: 100px;
+	margin-right: 20px;
+}
+
+section.paybox .title a {
+	text-decoration: none;
+}
+
+section.paybox .title h2 {
+	font-size: 25px;
+	color: black;
+}
+
+.paybox .result {
+	max-width: 1000px;
+	padding: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.paybox .result .result-1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.paybox .result .result-1 .result-1-title {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex: 1;
+}
+
+.paybox .result .result-1 .result-1-option {
+	text-align: center;
+	flex: 1;
+}
+
+.paybox .result .result-1 .result-1-moneys {
+	text-align: center;
+	flex: 1;
+}
+
+.paybox .result .result-1 .result-1-moneys h2 {
+	font-size: 20px;
+}
+
+.result-1 .result-1-delete {
+	flex: 1;
+	text-align: right;
+}
+
+.result-1 .result-1-delete .result-delete {
+	text-decoration: none;
+	color: black;
+	border: 1px solid #d3d3d3;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: all 0.4s ease-in-out;
+	margin-right: 40px;
+	font-size: 15px;
+}
+
+.result-1 .result-1-delete .result-delete:hover {
+	color: white;
+	background: #29323c;
+	border: none;
+	transition: all 0.4s ease-in-out;
+}
+
+.paybox .moreinfo {
+	position: absolute;
+	right: 190px;
+	bottom: 0px;
+	left: 60px;
+}
+
+.paybox .moneys2 {
+	left: 170px;
+}
+
+.paybox .title-1 {
+	right: 22px;
+}
+
+.paybox .title-2 {
+	left: 150px;
+}
+
+.delete {
+	width: 100%;
+	font-size: 13px;
+	border: none;
+	background-color: white;
+	padding: 5px;
+	color: rgb(0, 113, 227);
+}
+
+.delete:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.result-1-option .numberlist {
+	font-size: 20px;
+	border: none;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.result-1-option .numberlist:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.title-3 h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.moneys2 h3 {
+	font-size: 30px;
+	font-weight: bolder;
+	color: black;
+}
+
+.title3 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.title3 h2 {
+	text-align: left;
+	margin-bottom: 30px;
+	font-size: 30px;
+	list-style: none;
+}
+
+section.question {
+	border-top: 1px solid gainsboro;
+	padding: 10px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+section.question ul {
+	list-style: none;
+}
+
+.question .plusbtn {
+	font-size: 13px;
+}
+
+.listbtn {
+	font-size: 50px;
+	border: 1px solid white;
+	background-color: white;
+	color: gray;
+	padding: 10px;
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+}
+
+.qnabtn {
+	font-size: 15px;
+	font-weight: 700;
+	border: 1px solid white;
+	background-color: white;
+	color: black;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.pickbtn {
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid white;
+	background-color: white;
+	color: rgb(0, 113, 227);
+	padding: 5px;
+	cursor: pointer;
+}
+
+.pickbtn:hover {
+	text-decoration: underline;
+}
+
+.faq {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.faq button {
+	outline: none;
+}
+
+.togglebtn {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+}
+
+.paybox button {
+	outline: none;
+}
+
+@media screen and (max-width: 1000px) {
+	.visuallogout .menu {
+		flex-direction: column;
+		align-items: center;
+	}
+	.paybox .result .result-1 .result-1-moneys h2, .result-1-option .numberlist,
+		section.paybox .title h2 {
+		font-size: 16px;
+	}
+	.menu .login, .menu .welcomeM {
+		width: 300px;
+		margin: 15px auto;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.cart-main {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.visual .title h2 {
+		font-size: 20px;
+	}
+	.paybox .result-0-list {
+		font-size: 15px;
+	}
+	.Mac1 .reSize {
+		width: 75px;
+		height: 75px;
+		margin-right: 0px;
+	}
+	section.paybox .title h2 {
+		width: 100px;
+	}
+	.paybox .result-0 .result-0-list li:last-child {
+		margin-right: 20px;
+	}
+	.result-1 .result-1-delete .result-delete, .paybox .result .result-1 .result-1-moneys h2,
+		.result-1-option .numberlist, section.paybox .title h2 {
+		font-size: 15px;
+	}
+	.result-1 .result-1-delete .result-delete {
+		margin-right: 0px;
+	}
+}

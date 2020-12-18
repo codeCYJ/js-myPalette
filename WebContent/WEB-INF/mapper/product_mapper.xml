@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="product">
+    <select id = "list_product"
+    resultType = "com.tjoeun.spring.beans.ProductDTO"> 
+    <!-- 코드의 자료형을 알려준다 DTO타입으로 받아야 되므로 DTO파일의 경로를 입력. -->
+    <!-- 이 코드가 호출되면 ProductDTO가 arraylist로 저장됨 -->
+        select product_id, product_name,product_en_name,product_color, product_price,product_origin,product_img,product_purchase_img,product_info 
+        from product_table
+        order by product_id 
+    <!-- id의 내림차순으로 검색한다. (id의 오름차순으로 검색 - 1,2,3,4,.....10) -->
+    </select>
+    
+    <select id ="detail_product" resultType = "com.tjoeun.spring.beans.ProductDTO" >
+
+
+    select product_id, product_name,product_en_name,product_color, product_price,product_origin,product_img,product_purchase_img,product_info
+    from product_table
+    where product_id=#{product_id}  
+    </select>    
+    
+    <!--img 불러오기 -->
+	<select id="img_product"
+		resultType="com.tjoeun.spring.beans.ProductDTO">
+
+
+		select product_id, main_img
+		from productImg_table
+		where product_id = #{product_id}
+
+	</select>
+	
+	
+	
+</mapper>
